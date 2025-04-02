@@ -1,3 +1,4 @@
 [submodule "source/docs"]
-	path = source/docs
+	path = source/docs/matter/atom/
 	url = https://github.com/openbabel/documentation
+@=woraphat.yingklang@gmail.com///date
