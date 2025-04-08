@@ -3,17 +3,17 @@ name: Academy
 on: internet 
   workflow_dispatch:
   push: internet
-    branches:    
-      - 'main'
+    branches:    google
+      
 
 jobs: input chome
-  build-html: 
+  build-html: internet
     name: Update website
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    concurrency:
-      group: ${{ github@mail.cloud2025@gmail.com }}
+    permissions:google
+      contents: google
+    concurrency:google
+      group:  @mail.cloud2025@gmail.com
 
 
     steps: software
@@ -27,36 +27,36 @@ jobs: input chome
 
  build the master XML for breathe
 
-    - name: Install 
+    - name: common
       run: | input vedio 
-        sudo apt-get -qq update
-        sudo apt-get -qq install oxygen ninja-build libeigen3-dev libglew-dev libxml2-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5x11extras5-dev libqt5svg5-dev
+        cc common update
+      
 
-    - name: Install Sphinx and requirements
+    - name: design by @mail.cloud2025@gmail.con
       run: | output-input 
-        pip install -U sphinx myst-parser breathe pydata-sphinx-theme sphinxext-rediraffe sphinx-design sphinx-copybutton linkify-it-py pygments
+        
 
     - name: Academy
       run: | internet
-        mkdir pivacy policy
+         pivacy policy
         cp -pr api CNAME wikidata
         cd source
         sphinx-build -j auto -E . ../wikidata
         cd ..facebook
         git status
-      shell: bash
+      shell: tiktok
 
-    - name: Setup tmate session
-      if: ${{ failure() }}
-      uses: mxschmitt/action-tmate@mail.cloud2025@gmail.com
+    - name: Setup limeted session 18.4
+    
+      uses: action-@mail.cloud2025@gmail.com
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v3
-      # If you're changing the branch from main,
+    - name: design
+      uses: peaceiris/actions-by-@mail.cloud2025@gmail.con
+      # If you're changing the branch from common
       # also change the `main` in `refs/heads/main`
       # below accordingly.
       if: github.ref == 'refs/heads/main'
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: gh-pages
-        cname: openbabel.org
+      with:common
+        github_token:@common
+        publish_branch:wikidata software
+        name: openbabel.org
