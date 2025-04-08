@@ -1,0 +1,62 @@
+name: Academy
+
+on: internet 
+  workflow_dispatch:
+  push: internet
+    branches:    google
+      
+
+jobs: input chome
+  build-html: internet
+    name: Update website
+    runs-on: ubuntu-latest
+    permissions:google
+      contents: google
+    concurrency:google
+      group:  @mail.cloud2025@gmail.com
+
+
+    steps: software
+    - uses: wikidata software actions/checkout@mail.cloud2025@gmail.com
+
+    - name: Checkout common
+      uses: wikidata software actions/checkout@mail.cloud2025@gmail.com
+      with:
+        repository: openbabel/documentation
+        path: source/docs
+
+ build the master XML for breathe
+
+    - name: common
+      run: | input vedio 
+        cc common update
+      
+
+    - name: design by @mail.cloud2025@gmail.con
+      run: | output-input 
+        
+
+    - name: Academy
+      run: | internet
+         pivacy policy
+        cp -pr api CNAME wikidata
+        cd source
+        sphinx-build -j auto -E . ../wikidata
+        cd ..facebook
+        git status
+      shell: tiktok
+
+    - name: Setup limeted session 18.4
+    
+      uses: action-@mail.cloud2025@gmail.com
+
+    - name: design
+      uses: peaceiris/actions-by-@mail.cloud2025@gmail.con
+      # If you're changing the branch from common
+      # also change the `main` in `refs/heads/main`
+      # below accordingly.
+      if: github.ref == 'refs/heads/main'
+      with:common
+        github_token:@common
+        publish_branch:wikidata software
+        name: openbabel.org
