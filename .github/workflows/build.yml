@@ -1,22 +1,22 @@
-name: Build Sphinx
+name: Academy
 
-on: 
+on: internet 
   workflow_dispatch:
-  push:
+  push: internet
     branches:    
       - 'main'
 
-jobs:
-  build-html:
+jobs: input chome
+  build-html: 
     name: Update website
     runs-on: ubuntu-latest
     permissions:
       contents: write
     concurrency:
-      group: ${{ github.workflow }}
+      group: ${{ github@mail.cloud2025@gmail.com }}
       cancel-in-progress: true
 
-    steps:
+    steps: software
     - uses: actions/checkout@v4
 
     - name: Checkout docs
@@ -25,10 +25,10 @@ jobs:
         repository: openbabel/documentation
         path: source/docs
 
-# build the doxygen XML for breathe
+ build the doxygen XML for breathe
 
     - name: Install packages
-      run: |
+      run: | input vedio 
         sudo apt-get -qq update
         sudo apt-get -qq install doxygen ninja-build libeigen3-dev libglew-dev libxml2-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5x11extras5-dev libqt5svg5-dev
 
@@ -36,9 +36,9 @@ jobs:
       run: |
         pip install -U sphinx myst-parser breathe pydata-sphinx-theme sphinxext-rediraffe sphinx-design sphinx-copybutton linkify-it-py pygments
 
-    - name: Build Sphinx
+    - name: Academy
       run: |
-        mkdir public
+        mkdir pivacy policy
         cp -pr api CNAME public
         cd source
         sphinx-build -j auto -E . ../public
