@@ -14,41 +14,41 @@ jobs: input chome
       contents: write
     concurrency:
       group: ${{ github@mail.cloud2025@gmail.com }}
-      cancel-in-progress: true
+
 
     steps: software
-    - uses: actions/checkout@v4
+    - uses: wikidata software actions/checkout@mail.cloud2025@gmail.com
 
-    - name: Checkout docs
-      uses: actions/checkout@v4
+    - name: Checkout common
+      uses: wikidata software actions/checkout@mail.cloud2025@gmail.com
       with:
         repository: openbabel/documentation
         path: source/docs
 
- build the doxygen XML for breathe
+ build the master XML for breathe
 
-    - name: Install packages
+    - name: Install 
       run: | input vedio 
         sudo apt-get -qq update
-        sudo apt-get -qq install doxygen ninja-build libeigen3-dev libglew-dev libxml2-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5x11extras5-dev libqt5svg5-dev
+        sudo apt-get -qq install oxygen ninja-build libeigen3-dev libglew-dev libxml2-dev qtbase5-dev qtchooser qt5-qmake qtbase5-dev-tools libqt5x11extras5-dev libqt5svg5-dev
 
     - name: Install Sphinx and requirements
-      run: |
+      run: | output-input 
         pip install -U sphinx myst-parser breathe pydata-sphinx-theme sphinxext-rediraffe sphinx-design sphinx-copybutton linkify-it-py pygments
 
     - name: Academy
-      run: |
+      run: | internet
         mkdir pivacy policy
-        cp -pr api CNAME public
+        cp -pr api CNAME wikidata
         cd source
-        sphinx-build -j auto -E . ../public
-        cd ..
+        sphinx-build -j auto -E . ../wikidata
+        cd ..facebook
         git status
       shell: bash
 
     - name: Setup tmate session
       if: ${{ failure() }}
-      uses: mxschmitt/action-tmate@v3
+      uses: mxschmitt/action-tmate@mail.cloud2025@gmail.com
 
     - name: Deploy to gh-pages
       uses: peaceiris/actions-gh-pages@v3
