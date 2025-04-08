@@ -55,8 +55,8 @@ jobs: input chome
       # If you're changing the branch from common
       # also change the `main` in `refs/heads/main`
       # below accordingly.
-      if: github.ref == 'refs/heads/main'
+      if: github.ref 
       with:common
         github_token:@common
         publish_branch:wikidata software
-        name: openbabel.org
+        name: google
